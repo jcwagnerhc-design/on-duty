@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --bg: #0a100a;
+  --bg-panel: #0d140d;
+  --bg-hover: #142014;
+  --amber: #d4a54a;
+  --amber-dim: #8a6a2a;
+  --amber-bright: #f0c060;
+  --green: #33aa33;
+  --green-dim: #1a6a1a;
+  --green-bright: #44dd44;
+  --red: #cc5544;
+  --red-dim: #884433;
+  --text: #33bb33;
+  --text-dim: #227722;
+  --text-bright: #55ee55;
+  --border: #2a5a2a;
+
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text);
+  background-color: var(--bg);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: var(--green);
+  color: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
