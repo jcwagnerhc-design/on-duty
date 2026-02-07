@@ -60,7 +60,7 @@ const initialState: GameState = {
 
 export default function App() {
   const [state, setState] = useState<GameState>(initialState);
-  const [chapterEffects, setChapterEffects] = useState<StatEffects>({});
+  const [, setChapterEffects] = useState<StatEffects>({});
 
   const currentScenario = scenarios[state.currentScenarioIndex];
   const currentScene = currentScenario?.scenes.find(
@@ -237,7 +237,6 @@ export default function App() {
             events={state.chapterEvents}
             statsBefore={state.chapterStatSnapshot}
             statsAfter={state.stats}
-            totalEffects={chapterEffects}
             onContinue={handleNextChapter}
             isLastChapter={state.currentScenarioIndex >= scenarios.length - 1}
           />
